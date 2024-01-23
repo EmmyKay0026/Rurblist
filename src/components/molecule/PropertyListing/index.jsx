@@ -14,7 +14,7 @@ const PropertyListing = ({ title, rurblistbg }) => {
   };
   return (
     <>
-      <div className="w-[500px] mr-[30px]">
+      <div className=" mr-[30px]">
         <div className="w-[340px] pb-[18px] shadow-lg shadow-[rgba(0, 0, 0, 0.10)]">
           {/* img */}
           <div

@@ -21,14 +21,21 @@
     background-color: #5ED670;
 }
 
-.react-multi-carousel-track {
+/* .react-multi-carousel-track {
     gap: 80px;
-}
+} */
+/* .react-multi-carousel-track li {
+    width: 350px;
+} */
+/* .react-multi-carousel-list{
+    width:60%  !important;
+
+} */
 
 .react-multiple-carousel__arrow {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* .react-multi-carousel-item {
-    margin-left: 40px !important;
-} */
+.scroll-item {
+    width: auto !important;
+}

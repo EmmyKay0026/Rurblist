@@ -4,6 +4,7 @@ import PropertySlider from "../components/organism/PropertySlider/index";
 import Button from "../components/atom/Button";
 import PropertyLocation from "../components/molecule/PropertyLocation";
 import SectionHeading from "../components/molecule/SectionHeading";
+import Subscribe from "../components/molecule/Subscribe";
 import TestimonialSlider from "../components/organism/TestimonialSlider/index";
 import HeroSection from "../components/organism/HeroSection";
 import rurblisthome from "../../public/assets/rurblist-home.png" 
@@ -40,38 +41,37 @@ function Landing()  {
 
         <PropertySlider />
       </section>
-      {/*<section className="flex justify-between gap-[67px] py-[40px] px-[70px] w-full my-[70px]">
+      <section className="flex flex-col justify-between w-full px-[17px] py-[69px] md:px-[32px] lg:py-[40px] lg:flex-row lg:gap-[67px] lg:px-[70px] ">
         <Image
-          className="w-[50%]"
+          className="lg:w-[50%]"
           src={rurblistimg}
           alt="home"
         />
         <CTA
-          className="mt-[30px] w-[50%]"
+          className="mt-[30px] lg:w-[50%]"
           ctaHeadText="Meet and talk with our agents"
-          ctaHeadClassname="w-[65%]"
+          ctaHeadClassname="lg:w-[65%]"
           ctaPText="All our agents are professionals and competent in their fields and will help you realize your dream housee with excellent price."
           ctaBtn="Chat an agent"
           btnLink=""
         />
-      </section> */}
+      </section>
 
-      {/* <section>
+       <section>
         <SectionHeading
           headingText="Our Property Locations"
           pText="View our property locations"
         />
-        <div className="grid grid">
-        <PropertyLocation viewHomeLink="#" homeImg={rurblisthome} />
-        </div>
+        <PropertyLocation  />
+        <center><Button className="hidden font-bold bg-transparent border-[1.5px] border-rurb-green text-rurb-green md:block md:my-[50px]" children="See all &#8594;" /></center>
 
       </section>
       <section className="flex flex-col items-center justify-center learn-gradient-bg bg-cover bg-no-repeat mb-[50px] py-[67px] ">
-        <p className="font-geo text-rurb-dark-green mb-[20px] text-[2rem] font-bold w-[60%] text-center">
+        <p className="font-geo text-rurb-dark-green mb-[20px] text-[1rem] font-bold md:w-[70%] md:text-[1.3rem] lg:text-[2rem] lg:w-[60%] text-center">
           Learn more about our listing process as an agent, as well as our
           properties to become a home owner.
         </p>
-        <Button children="Learn more" className="w-[15%] text-[1.3rem]" />
+        <Button children="Learn more" className=" text-[1.3rem]" />
       </section>
       <section>
         <SectionHeading
@@ -80,15 +80,16 @@ function Landing()  {
           pClassName="mt-[16px] mb-[32px] "
           headClassName="text-[2rem]"
         />
-        <div className="flex justify-between gap-[20%] py-[40px] px-[80px] w-full">
+       {/* <div className="flex justify-between gap-[20%] py-[40px] px-[80px] w-full">
           <TestimonialSlider /> 
           <Image
             className="w-[50%]"
             src={excitedRurblist}
             alt="happy family"
           />
-        </div>
-      </section> */}
+        </div> */}
+      </section> 
+      <Subscribe />
       
     </main>
   );

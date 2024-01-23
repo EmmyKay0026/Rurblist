@@ -12,7 +12,7 @@ const SectionTitle = ({
     <div className={className}>
       <h2
         className={cn(
-          "text-center text-rurb-dark-green font-geo leading-[1.9rem] text-[1.9rem]",
+          "text-center text-rurb-dark-green font-geo leading-[1.9rem] text-[1.9rem] mt-[60px]",
           headClassName
         )}
       >
@@ -20,7 +20,7 @@ const SectionTitle = ({
       </h2>
       <p
         className={cn(
-          "text-center font-pop text-[1.2rem] leading-[2.2rem] mt-[28px] mb-[70px]",
+          "text-center font-pop text-[1.2rem] leading-[2.2rem] my-[18px] ",
           pClassName
         )}
       >

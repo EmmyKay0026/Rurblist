@@ -27,7 +27,7 @@ const TestimonialSlider = () => {
 
   return (
     <div
-      className="w-[405px]"
+      className="w-[70%]"
       style={{
         position: "relative",
       }}
@@ -73,7 +73,7 @@ const TestimonialSlider = () => {
               max: 1024,
               min: 464,
             },
-            items: 2,
+            items: 1,
             partialVisibilityGutter: 30,
           },
         }}
