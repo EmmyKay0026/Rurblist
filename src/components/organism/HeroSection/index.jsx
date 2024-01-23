@@ -51,7 +51,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="hidden sm:block">
-              <Button type="submit" className="font-bold" children="Search" />
+              <Button type="submit" className="font-bold" BtnChildren="Search" />
             </div>
           </form>
         </div>

@@ -51,7 +51,7 @@ const PropertyListing = ({ title, rurblistbg }) => {
           {/* Price */}
           <div className="flex justify-between px-[20px]">
             <p className="text-pop text-[#000] ">$400</p>
-            <Button children="Checkout" className="text-[1rem]" />
+            <Button BtnChildren="Checkout" className="text-[1rem]" />
           </div>
         </div>
       </div>

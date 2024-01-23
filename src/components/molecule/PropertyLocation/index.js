@@ -14,28 +14,28 @@ import rurblisthouse3 from "../../../../public/assets/rurblisthouse3.png"
       <p className="text-[20px]">Warri, Delta state.</p>
       <Image className="my-[2%]" src={rurblisthouse3} />
       <Link href="">
-        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" children="View home &#8594;" />
+        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" BtnChildren="View home &#8594;" />
       </Link>
     </div>
       <div className="flex flex-col items-center justify-center">
       <p className="text-[20px]">Warri, Delta state.</p>
       <Image className="my-[2%]" src={rurblisthouse3} />
       <Link href="">
-        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" children="View home &#8594;" />
+        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" BtnChildren="View home &#8594;" />
       </Link>
     </div>
       <div className="flex flex-col items-center justify-center">
       <p className="text-[20px]">Warri, Delta state.</p>
       <Image className="my-[2%]" src={rurblisthouse3} />
       <Link href="">
-        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" children="View home &#8594;" />
+        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" BtnChildren="View home &#8594;" />
       </Link>
     </div>
       <div className="flex flex-col items-center justify-center">
       <p className="text-[20px]">Warri, Delta state.</p>
       <Image className="my-[2%]" src={rurblisthouse3} />
       <Link href="">
-        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" children="View home &#8594;" />
+        <Button className="bg-transparent text-rurb-orange border-[1.5px] border-rurb-orange font-bold" BtnChildren="View home &#8594;" />
       </Link>
     </div>
     

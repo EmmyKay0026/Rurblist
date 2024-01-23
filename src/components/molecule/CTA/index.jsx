@@ -31,7 +31,7 @@ const CTA = ({
         {ctaPText}
       </p>
       <Link href={btnLink}>
-        <Button className="font-bold" children={ctaBtn} />
+        <Button className="font-bold" BtnChildren={ctaBtn} />
       </Link>
     </div>
   );

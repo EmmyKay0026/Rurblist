@@ -1,7 +1,7 @@
 import React from "react";
 import { cn } from "../../../lib/utils";
 
-const Button = ({ type, children, className, onClick }) => {
+const Button = ({ type, BtnChildren, className, onClick }) => {
   return (
     <button
       type={type}
@@ -11,7 +11,7 @@ const Button = ({ type, children, className, onClick }) => {
       )}
       onClick={onClick}
     >
-      {children}
+      {BtnChildren}
     </button>
   );
 };

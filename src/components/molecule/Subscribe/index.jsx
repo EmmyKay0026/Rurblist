@@ -10,7 +10,7 @@ const Subscribe = ()=>{
             <p className="text-rurb-brown text-[.9rem]">Be the first to know about the properties available..</p>
             <form className="flex flex-col md:flex-row gap-[10px] w-full mt-[30px]" action="" method="post">
                 <input className="w-full text-[16px] py-[8px] pl-[20px] rounded-[8px] border-[1px] border-rurb-green" type="email" name="email" id="email1" placeholder="Enter your email address..."/>
-                <Button children="&#8594;"/>
+                <Button BtnChildren="&#8594;"/>
             </form>
         </section>
     )
