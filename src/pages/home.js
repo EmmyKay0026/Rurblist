@@ -63,15 +63,15 @@ function Landing()  {
           pText="View our property locations"
         />
         <PropertyLocation  />
-        <center><Button className="hidden font-bold bg-transparent border-[1.5px] border-rurb-green text-rurb-green md:block md:my-[50px]" BtnChildren="See all &#8594;" /></center>
+        <center><Button className="my-[30px] font-bold bg-transparent border-[1.5px] border-rurb-green text-rurb-green md:my-[50px]" BtnChildren="See all &#8594;" /></center>
 
       </section>
       <section className="flex flex-col items-center justify-center learn-gradient-bg bg-cover bg-no-repeat mb-[50px] py-[67px] ">
-        <p className="font-geo text-rurb-dark-green mb-[20px] text-[1rem] font-bold md:w-[70%] md:text-[1.3rem] lg:text-[2rem] lg:w-[60%] text-center">
+        <p className="font-geo text-rurb-dark-green mb-[20px] text-[1rem] px-[10px] font-bold md:w-[70%] md:text-[1.3rem] lg:text-[2rem] lg:w-[60%] text-center">
           Learn more about our listing process as an agent, as well as our
           properties to become a home owner.
         </p>
-        <Button BtnChildren="Learn more" className=" text-[1.3rem]" />
+        <Button BtnChildren="Learn more" className=" text-[.9rem] md:text-[1.3rem]" />
       </section>
       <section>
         <SectionHeading
