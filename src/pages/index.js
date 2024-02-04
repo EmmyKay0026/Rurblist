@@ -1,118 +1,100 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import CTA from "../components/molecule/CTA/index";
+import PropertySlider from "../components/organism/PropertySlider/index";
+import Button from "../components/atom/Button";
+import PropertyLocation from "../components/molecule/PropertyLocation";
+import SectionHeading from "../components/molecule/SectionHeading";
+import Subscribe from "../components/molecule/Subscribe";
+import TestimonialSlider from "../components/organism/TestimonialSlider/index";
+import HeroSection from "../components/organism/HeroSection";
+import rurblisthome from "../../public/assets/rurblist-home.png" 
+import excitedRurblist from "../../public/assets/excitedRurblist.png";
+import rurblistimg from "../../public/assets/rurblistimg.png";
+import NavBar from "@/components/organism/NavBar";
 
-const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+
+
+function Landing()  {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
+    <main>
+      <NavBar />
+      <HeroSection />
+       <section className="flex flex-col justify-between w-full px-[17px] py-[69px] md:px-[32px] lg:py-[40px] lg:flex-row lg:gap-[67px] lg:px-[70px] ">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className="lg:w-[50%]"
+          src={rurblisthome}
+          alt="happy family"
         />
-      </div>
+        <CTA
+          className="mt-[30px] lg:w-[50%]"
+          ctaHeadText="Get the best experience of real estate at Rubrlist"
+          ctaHeadClassname=" lg:w-[65%]"
+          ctaPText="At Rubrlist, we create a stress free experience for you. Our agents provides options of different properties at affordable price. Let us find you your dream home seamlessly at a your location of choice. We create unforgettable experiences for you by offering you luxury at the best price according to your budget."
+          ctaBtn="Contact a realtor now"
+          btnLink="#"
+        />
+      </section> 
+       <section>
+        <SectionHeading
+          headingText="Featured properties"
+          pText="The best just for you"
+        />
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <PropertySlider />
+      </section>
+      <section className="flex flex-col justify-between w-full px-[17px] py-[69px] md:px-[32px] lg:py-[40px] lg:flex-row lg:gap-[67px] lg:px-[70px] ">
+        <Image
+          className="lg:w-[50%]"
+          src={rurblistimg}
+          alt="home"
+        />
+        <CTA
+          className="mt-[30px] lg:w-[50%]"
+          ctaHeadText="Meet and talk with our agents"
+          ctaHeadClassname="lg:w-[65%]"
+          ctaPText="All our agents are professionals and competent in their fields and will help you realize your dream housee with excellent price."
+          ctaBtn="Chat an agent"
+          btnLink=""
+        />
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+       <section>
+        <SectionHeading
+          headingText="Our Property Locations"
+          pText="View our property locations"
+        />
+        <PropertyLocation  />
+        <center><Button className="my-[30px] font-bold bg-transparent border-[1.5px] border-rurb-green text-rurb-green md:my-[50px]" BtnChildren="See all &#8594;" /></center>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section className="flex flex-col items-center justify-center learn-gradient-bg bg-cover bg-no-repeat mb-[50px] py-[67px] ">
+        <p className="font-geo text-rurb-dark-green mb-[20px] text-[1rem] px-[10px] font-bold md:w-[70%] md:text-[1.3rem] lg:text-[2rem] lg:w-[60%] text-center">
+          Learn more about our listing process as an agent, as well as our
+          properties to become a home owner.
+        </p>
+        <Button BtnChildren="Learn more" className=" text-[.9rem] md:text-[1.3rem]" />
+      </section>
+      <section>
+        <SectionHeading
+          headingText="Testimonials"
+          pText="See what our customer are saying about our services."
+          pClassName="mt-[16px] mb-[32px] "
+          headClassName="text-[2rem]"
+        />
+       {/* <div className="flex justify-between gap-[20%] py-[40px] px-[80px] w-full">
+          <TestimonialSlider /> 
+          <Image
+            className="w-[50%]"
+            src={excitedRurblist}
+            alt="happy family"
+          />
+        </div> */}
+      </section> 
+      <Subscribe />
+      
     </main>
-  )
-}
+  );
+}; 
+
+export default Landing;

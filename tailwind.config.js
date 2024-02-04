@@ -23,11 +23,18 @@ module.exports= {
           'learn-bg': "url('../../public/assets/rurblist-learn-bg.png')",
         'rurb-gradient':"linear-gradient(90deg, #D9FFDE 0%, rgba(161, 255, 174, 0.86) 21.03%, rgba(121, 255, 139, 0.69) 45.96%, #C9FED0 80.24%, rgba(201, 243, 206, 0.30) 105.17%, rgba(46, 255, 73, 0.15) 126.98%, rgba(0, 255, 34, 0.00) 149.57%);"
       },
-    },
-    fontFamily: {
-      'prox': ['"Proxima Nova"'],
-      'geo': ['"Georgia"'],
-      'pop': ['"Poppins"'],
+      transitionProperty: {
+        'justify': 'justify-content',
+        'spacing': 'margin, padding',
+      },
+      fontFamily: {
+        'prox': ['"Proxima Nova"'],
+        'geo': ['"Georgia"'],
+        'pop': ['"Poppins"'],
+      },
+      boxShadow:{
+        '3xl': '1px 4px 25px 1px rgba(0, 0, 0, 0.05)',
+      }
     },
     colors: {
       'rurb-orange': '#EC6C10',
